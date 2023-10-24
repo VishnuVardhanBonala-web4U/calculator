@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator For U </title>
+
+    </head>
+
+    <h2 class="text-calculator">Calculator For U </h2>
+    <div class="cal-container">
+
+
+        <table>
+
+            <tr>
+                <td>
+                    <input type="button" value="C" onclick="clear_input()" />
+                </td>
+                <td colspan="4"><input type="text" id="input" value="" placeholder="calculator"
+                        onkeypress="take_input(event)" /></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="1" onclick="addinput('1')" /> </td>
+                <td> <input type="button" value="2" onclick="addinput('2')" /> </td>
+                <td> <input type="button" value="3" onclick="addinput('3')" /> </td>
+                <td> <input type="button" value="4" onclick="addinput('4')" /> </td>
+
+
+
+            </tr>
+            <tr>
+                <td> <input type="button" value="5" onclick="addinput('5')" /> </td>
+                <td> <input type="button" value="6" onclick="addinput('6')" /> </td>
+                <td> <input type="button" value="7" onclick="addinput('7')" /> </td>
+                <td> <input type="button" value="8" onclick="addinput('8')" /> </td>
+
+
+
+            </tr>
+            <tr>
+                <td> <input type="button" value="9" onclick="addinput('9')" /> </td>
+                <td> <input type="button" value="0" onclick="addinput('0')" /> </td>
+                <td> <input type="button" value="." onclick="addinput('.')" /> </td>
+                <td> <input type="button" value="=" onclick="findoutput()" /> </td>
+
+
+
+            </tr>
+            <tr>
+                <td> <input type="button" value="+" onclick="addinput('+')" /> </td>
+                <td> <input type="button" value="-" onclick="addinput('-')" /> </td>
+                <td> <input type="button" value="*" onclick="addinput('*')" /> </td>
+                <td> <input type="button" value="/" onclick="addinput('/')" /> </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <body>
+
+        <script src="index.js"></script>
+    </body>
+
+
+</html>
